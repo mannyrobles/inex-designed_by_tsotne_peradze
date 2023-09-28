@@ -54,6 +54,7 @@
   position: relative;
   display: flex;
   height: 70vh;
+  width: 100%;
   background-color: #C03A3A;
   color: #FAFAFA;
 }
@@ -328,10 +329,9 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -490,7 +490,7 @@ a[href*="#find"]:active {
 }
 
 .top svg {
-  color: #5656ff;
+  color: rgb(86, 86, 255);
   height: 2em;
   width: 2em;
 }
@@ -520,5 +520,9 @@ a[href*="#find"]:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
+}
+
+iframe {
   width: 100%;
 }

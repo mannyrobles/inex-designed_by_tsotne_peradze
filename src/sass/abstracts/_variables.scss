@@ -13,3 +13,11 @@ $darken: 30;
 //display
 $f: flex;
 $g: grid;
+
+//viewport sizes
+$breakpoints: (
+  small: 480px,
+  medium: 720px,
+  large: 960px,
+  wide: 1554px
+);

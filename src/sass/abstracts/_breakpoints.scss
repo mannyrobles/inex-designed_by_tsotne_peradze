@@ -1,0 +1,41 @@
+// @use 'mixins';
+// @use 'map';
+
+//view port sizes
+// $breakpoints: (
+//   small: 480px,
+//   medium: 720px,
+//   large: 960px,
+//   wide: 1554px
+// );
+
+
+// // media queries aka breakpoints
+// @mixin breakpoint($name) {
+//     @if not map-has-key($breakpoints, $name) {
+//       @warn "Invalid breakpoint `#{$name}`.";
+//     }
+//     @else {
+//       @media (min-width: map-get($breakpoints, $name)) {
+//         @content;
+//       }
+//     }
+//   }
+
+
+
+// @include breakpoint(small) {
+
+// }
+
+// @include breakpoint(medium) {
+
+// }
+
+// @include breakpoint(large) {
+
+// }
+
+// @include breakpoint(wide) {
+
+// }
