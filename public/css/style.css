@@ -1,3 +1,22 @@
+@media (max-width: 1400px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+  .hero .hero-p {
+    padding-top: 2em;
+    padding-right: 0;
+  }
+  .hero img, .hero .arrows {
+    display: none;
+  }
+  .hero .left {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
 .adv-cards {
   display: grid;
   grid-template-columns: repeat(5, 260px);
