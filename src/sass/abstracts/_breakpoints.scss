@@ -1,19 +1,46 @@
-@media (max-width: 1400px) {
-    .hero {
-        justify-content: center;
-        text-align: center;
-        .hero-p {
-            padding-top: 2em;
-            padding-right: 0;
-        }
-        img, .arrows {
+@media (max-width: 1600px) {
+    .images {
+    justify-content: space-between;
+        .img-3 {
             display: none;
         }
-        .left {
-            width: 100%;
+        .img-1 {
+            margin-left: 25%;
         }
     }
-    .right {
-        display: none;
+    
+}
+
+@media (max-width: 1400px) {
+   .img-2 {
+    display: none;
+   }
+   .img-1 {
+    width: 366px;
+    height: 550px;
+    }
+    .images {
+        margin-left: 20%;
     }
 }
+
+// @media (max-width: 1329px) {
+//     .hero {
+//         width: 100%;
+//         justify-content: center;
+//         text-align: center;
+//         .left-p {
+//             padding-top: 2em;
+//             padding-right: 0;
+//         }
+//         img, .arrows {
+//             display: none;
+//         }
+//         .left {
+//             width: 100%;
+//         }
+//     }
+//     .right {
+//         display: none;
+//     }
+// }

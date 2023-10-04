@@ -1,20 +1,24 @@
+@media (max-width: 1600px) {
+  .images {
+    justify-content: space-between;
+  }
+  .images .img-3 {
+    display: none;
+  }
+  .images .img-1 {
+    margin-left: 25%;
+  }
+}
 @media (max-width: 1400px) {
-  .hero {
-    justify-content: center;
-    text-align: center;
-  }
-  .hero .hero-p {
-    padding-top: 2em;
-    padding-right: 0;
-  }
-  .hero img, .hero .arrows {
+  .img-2 {
     display: none;
   }
-  .hero .left {
-    width: 100%;
+  .img-1 {
+    width: 366px;
+    height: 550px;
   }
-  .right {
-    display: none;
+  .images {
+    margin-left: 20%;
   }
 }
 .adv-cards {
