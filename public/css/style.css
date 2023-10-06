@@ -10,6 +10,21 @@
   }
 }
 @media (max-width: 1400px) {
+  .hero {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero .left-p {
+    padding-top: 2em;
+    padding-right: 0;
+  }
+  .hero .images, .hero .arrows {
+    display: none;
+  }
+  .hero .left {
+    width: 100%;
+  }
   .img-2 {
     display: none;
   }
@@ -19,6 +34,15 @@
   }
   .images {
     margin-left: 20%;
+  }
+  .right {
+    display: none;
+  }
+  .adv-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: center;
+    justify-content: space-around;
   }
 }
 .adv-cards {
