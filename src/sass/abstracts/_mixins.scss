@@ -28,6 +28,11 @@
   padding-right: 8em;
   @content;
 }
+@mixin smallp() {
+  padding-left: 1em;
+  padding-right: 1em;
+  @content;
+}
 
 //hero image style 
 @mixin hero-img() {
