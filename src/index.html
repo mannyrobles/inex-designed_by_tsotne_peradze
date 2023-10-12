@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="topnav">
       <div class="logo">LOGO</div>
       <div class="links">
         <div class="t_nav">
@@ -24,6 +24,21 @@
           <a class="button-create" href="#">Create Account</a>
           <a class="button-log"  href="#">Log In</a>
         </div>
+      </div>
+      <div class="hamburger">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
       </div>
     </header>
     <main>
@@ -305,7 +320,7 @@
                 <li><a href="#">Personal Parcels</a></li>
                 <li><a href="#">Commercial Cargo</a></li>
                 <li><a href="#">Shipment From Georgia</a></li>
-                <li><a href="#">Delivery Service/a></li>
+                <li><a href="#">Delivery Service</a></li>
                 <li><a href="#">Insurance Service</a></li>
               </ul>
            </div>

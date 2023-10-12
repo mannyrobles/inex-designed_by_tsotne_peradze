@@ -20,31 +20,31 @@
   grid-gap: 3rem;
 }
 
-.header, .advantages, .hero, .advantages, .flight-schedule {
+.advantages, .hero, .advantages, .flight-schedule {
   padding-left: 8em;
   padding-right: 8em;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+.topnav {
+  float: left;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   padding-left: 8em;
   padding-right: 8em;
-  padding-top: 2em;
+  margin-top: 2em;
 }
-.header .links {
+.topnav .links {
   display: inline-flex;
 }
-.header .links .t_nav {
+.topnav .links .t_nav {
   display: flex;
   align-self: center;
 }
-.header .logo {
+.topnav .logo {
   font-size: 50px;
 }
-.header .button-wrapper {
+.topnav .button-wrapper {
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -275,6 +275,10 @@ ul {
   }
 }
 @media (max-width: 1400px) {
+  .topnav {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
   .hero {
     width: 100%;
     justify-content: center;
@@ -319,13 +323,21 @@ ul {
     margin: 1rem 1rem;
   }
 }
-@media (max-width: 800px) {
-  .header, .advantages, .hero, .advantages, .flight-schedule, .news, .footer {
+@media (max-width: 1000px) {
+  .topnav, .advantages, .hero, .tracking, .advantages, .flight-schedule, .news, .footer {
     padding-left: 1em;
     padding-right: 1em;
   }
   .lets-start p {
     font-size: 2em;
+  }
+  .tracking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer {
+    font-size: 0.65em;
   }
 }
 * {
