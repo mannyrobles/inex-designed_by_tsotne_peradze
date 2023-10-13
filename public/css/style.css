@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
 .adv-cards {
   display: grid;
   grid-template-columns: repeat(5, 260px);
@@ -25,29 +26,57 @@
   padding-right: 8em;
 }
 
-.topnav {
-  float: left;
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding-left: 8em;
-  padding-right: 8em;
-  margin-top: 2em;
+.nav-toggle {
+  top: -9999px !important;
+  right: -9999px !important;
 }
-.topnav .links {
-  display: inline-flex;
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(173, 216, 230, 0.75);
 }
-.topnav .links .t_nav {
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 1em;
+  height: 100%;
   display: flex;
-  align-self: center;
-}
-.topnav .logo {
-  font-size: 50px;
-}
-.topnav .button-wrapper {
   align-items: center;
-  align-content: center;
-  justify-content: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
 }
 
 .hero {
@@ -323,12 +352,15 @@ ul {
     margin: 1rem 1rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
   .topnav, .advantages, .hero, .tracking, .advantages, .flight-schedule, .news, .footer {
     padding-left: 1em;
     padding-right: 1em;
   }
-  .lets-start p {
+  .h-links, .button-wrapper {
+    display: none;
+  }
+  .topnav .lets-start p {
     font-size: 2em;
   }
   .tracking {
