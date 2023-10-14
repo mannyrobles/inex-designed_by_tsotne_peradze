@@ -27,57 +27,74 @@
 //   }
 // }
 // NEW NAV TEST
-.nav-toggle {
-  // position: absolute !important;
-  top: -9999px !important;
-  right: -9999px !important;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, .75);
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-left: 1em;
-  height: 100%;
+.nav-bar {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
+  list-style: none;
   position: relative;
+  background-color: var(--color2);
+  padding: 12px 20px;
 }
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
+.logo img {width: 40px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color1);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+.menu li a::after {
+  content: "";
   position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color1);
+  transition: 0.15s ease-in-out;
 }
-
-.nav-toggle-label span::before {
-  bottom: 7px;
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+  position: absolute;
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
 }
-
-.nav-toggle-label span::after {
-  top: 7px;
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
+.close-menu {
+  top: 20px;
+  right: 20px;
 }
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
+#check {display: none;}
+@media(max-width: 610px){
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: slategray;
+      transition: all 0.2s ease-in-out;
+  }
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu {right: 0;}
 }
 //END OF NEW NAV TEST
 //hero
@@ -324,15 +341,9 @@ ul {
           margin-left: 25%;
       }
   }
-
-  
 }
 
 @media (max-width: 1400px) {
- .topnav {
-  @include mixins.smallp;
- }
-  
  .hero {
       width: 100%;
       justify-content: center;
@@ -380,13 +391,12 @@ ul {
   }
 }
 @media (max-width: 1020px) {
-  .topnav, .advantages, .hero, .tracking, .advantages, .flight-schedule, .news, .footer {
+ .advantages, .hero, .tracking, .advantages, .flight-schedule, .news, .footer {
     @include mixins.smallp;
   }
   .h-links, .button-wrapper {
     display: none;
   }
-  .topnav
   .lets-start p {
     font-size: 2em;
   }

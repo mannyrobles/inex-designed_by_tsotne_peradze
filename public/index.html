@@ -8,9 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header class="topnav" >
+    <header>
+      <nav>
+          <ul class='nav-bar'>
+              <li class='logo'><a href='#'>LOGO</a></li>
+              <input type='checkbox' id='check' />
+              <span class="menu">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Products</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+                  <!-- <li><a class="button-create" href="#">Create Account</a></li>
+                  <li><a class="button-log"  href="#">Log In</a></li> -->
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </span>
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+          </ul>
+      </nav>
+      </header>
+    <!-- <header class="topnav" >
       <div class="logo">LOGO</div>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <nav class="links">
@@ -20,13 +40,13 @@
           <li><a class="h-links" href="#">Prices</a></li>
           <li><a class="h-links" href="#">About Us</a></li>
           <li><a class="h-links" href="#">Contact</a></li>
+          <li><a class="button-create" href="#">Create Account</a></li>
+          <li><a class="button-log"  href="#">Log In</a></li>
         </ul>
       </nav>
-        <div class="button-wrapper">
-          <a class="button-create" href="#">Create Account</a>
-          <a class="button-log"  href="#">Log In</a>
-        </div>
-      </div>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
       <div class="hamburger">
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -42,7 +62,7 @@
           }
           </script>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="left">
