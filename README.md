@@ -31,11 +31,10 @@
     &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
 -->
-     <a href="https://mannyrobles.github.io/inex-designed_by_tsotne_peradze/">View Demo</a>
   </p>
 
+  <a href="https://mannyrobles.github.io/inex-designed_by_tsotne_peradze/">View Demo</a>
 
--->
 
 </div>
 
