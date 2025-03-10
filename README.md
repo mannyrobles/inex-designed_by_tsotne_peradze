@@ -11,10 +11,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <!-- <a href="https://github.com/github_username/repo_name">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
-
+-->
 <h3 align="center">Shipping Website Demo</h3>
 
   <p align="center">
@@ -31,11 +31,9 @@
     &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
 -->
-     <a href="https://mannyrobles.github.io/inex-designed_by_tsotne_peradze/">View Demo</a>
   </p>
-
-
--->
+  
+<a href="https://mannyrobles.github.io/inex-designed_by_tsotne_peradze/">View Demo</a>
 
 </div>
 
@@ -76,7 +74,7 @@
 
 This project was started to test my web development skills. I went on to dribbble.com to see interesting UX/UI designs for webpages and decided to try and recreate it soley based off of the images of the site itself. This site was designed by https://dribbble.com/TsPeradze and put coded by me.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -85,7 +83,7 @@ This project was started to test my web development skills. I went on to dribbbl
 * HTML
 * CSS
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -97,7 +95,7 @@ Your Name - [@mannyr0bles](https:/x.com/mannyr0les) - mannyrobles@protonmail.com
 
 Project Link: [https://github.com/mannyrobles/inex-designed_by_tsotne_peradze](https://github.com/mannyrobles/inex-designed_by_tsotne_peradze)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
